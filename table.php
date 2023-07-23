@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+	.pp {
+		margin-left: auto;
+		margin-right: auto;
+		width: 1010px;
+		border-collapse: collapse;
+		/*argin: 25px 0; */
+		font-size: 0.9cm;
+		min-width: 400px;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+		box-shadow: 0 0 20px gba(0, 0, 0, 0)
+	}
+.pp thead th{
+	background-color: #fbb700;
+	color: #ffffff:
+	
+}
+
+.pp th,
+.pp td{
+	padding: 12px 15px;
+
+}
+
+
+.pp tbody tr{
+	border-bottom: 1px solid #dddddd;
+}
+
+.pp tbody tr:nth-of-type(even) {
+	background-color: #0447cf;
+	color: #fbb700;
+} 
+
+.pp tbody tr:last-of-type{
+	border-bottom: 2px solid #fbb700;	
+}
+
+
+</style>
+
+
 <head>
 <title>result</title>
-
-<style type="text/css">
-body {
-	background-color: #00FF66;
-}
-body,td,th {
-	color: #000;
-}
-</style>
 <meta charset="utf-8">
 </head>
+
 <body>
 <div>
 		
@@ -25,14 +61,13 @@ body,td,th {
   
 	<div>
      
-		<table width="1010" border="1" style="border:solid" bordercolor="#999999" margin="0"
-        >
+		<table class="pp">
         
 			<thead>
              
-           <th bgcolor="#FFFFFF" bordercolor="#000000" width="10">Feedback Id</th>
-				<th bgcolor="#FFFFFF" width="10">rating</th>
-                <th bgcolor="#FFFFFF" width="78">message</th>
+           <th align="left" bgcolor="#FFFFFF" bordercolor="#000000" width="10">Feedback Id</th>
+				<th align="left" bgcolor="#FFFFFF" width="10">rating</th>
+                <th align="left" bgcolor="#FFFFFF" width="78">message</th>
                
 			
 			<tbody>
@@ -43,9 +78,9 @@ body,td,th {
 						?>
 						<tr>
 			
-                          <td bgcolor="#EFEFEF" height="46"><?php echo $row['fid']; ?></td>
-							<td bgcolor="#EFEFEF"><?php echo $row['rating']; ?></td>
-                            <td bgcolor="#EFEFEF"><?php echo $row['message']; ?></td>
+                          <td ><?php echo $row['fid']; ?></td>
+							<td ><?php echo $row['rating']; ?></td>
+                            <td ><?php echo $row['message']; ?></td>
                            
 							</td>
 						</tr>
