@@ -66,8 +66,10 @@
 			<thead>
              
            <th align="left" bgcolor="#FFFFFF" bordercolor="#000000" width="10">Feedback Id</th>
+		   <th align="left" bgcolor="#FFFFFF" width="78">Customer Id</th>
 				<th align="left" bgcolor="#FFFFFF" width="10">rating</th>
                 <th align="left" bgcolor="#FFFFFF" width="78">message</th>
+				
                
 			
 			<tbody>
@@ -79,8 +81,10 @@
 						<tr>
 			
                           <td ><?php echo $row['fid']; ?></td>
+						  <td ><?php echo $row['cid']; ?></td>
 							<td ><?php echo $row['rating']; ?></td>
                             <td ><?php echo $row['message']; ?></td>
+							
                            
 							</td>
 						</tr>
